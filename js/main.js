@@ -28,3 +28,30 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
+
+// Lazy-play: only load/play videos once they're actually visible,
+// and pause them when scrolled away. Prevents mobile browsers from
+// choking on many videos all trying to autoplay/preload at once.
+document.addEventListener("DOMContentLoaded", function () {
+  var videos = document.querySelectorAll(".card-media video.thumb");
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) {
+          video.play().catch(function () {
+            /* ignore - browser may still be blocking autoplay for other reasons */
+          });
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  videos.forEach(function (video) {
+    observer.observe(video);
+  });
+});
