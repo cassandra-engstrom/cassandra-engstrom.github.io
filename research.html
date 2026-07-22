@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Cassandra Engstrom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">Cassandra Engstrom</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header style="padding: 3.5rem 0 2rem;">
+  <div class="wrap">
+    <p class="eyebrow">Projects</p>
+    <h1>Research</h1>
+    <!--<p class="prose muted">
+      Selected projects on spatial navigation, motion-tracking analysis, and
+      the models used to make sense of how people move through mazes and
+      open-field environments.
+    </p>-->
+  </div>
+</header>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-media">
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/maze-heatmap-placeholder.jpg">
+              <source src="assets/videos/FYP_animation.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/FYP_animation.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/maze-heatmap-placeholder.jpg">
+              <source src="assets/videos/GardenOfFP_animation.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/GardenOfFP_animation.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+        </div>
+        <!--<span class="tag">Trajectory analysis</span>-->
+
+        <h3>How do people navigate through unfamiliar environments?</h3>
+        <p class="muted">
+          We have tasked humans to navigate through novel, multi-room environments towards a goal to understand the mechanisms of so-called “naive” navigation, where barrier configurations are <em>a priori</em> unknown and decision-making is therefore explicitly ‘local’, i.e: based only on what is immediately perceivable. 
+        </p>
+        <details class="read-more">
+          <summary>Read more</summary>
+          <p class="muted">
+            The variables ‘naive’ navigators appear to be influenced by when making turns at decision points are the immediate distances to candidate waypoints (d), the angular deviation between candidate waypoints and the goal vector (Θ), and the angular deviation between candidate waypoints and the current heading direction (Γ). Critically, these variables are also weighted differentially depending on the state of the navigator: whether they are initiating a route sequence from stationary or continuing a set of turns while in motion. Behavior is best explained by a vector-based model that uses vector addition to sum directional influences, a mechanism that is biologically plausible. Lastly, we have found through agent simulations that an agent that simply minimizes Θ while ignoring all other variables outperforms all other single and combined-strategy agents in discovering more metabolically efficient and shorter routes statistically more often (Engstrom, Srinivasan & Warren, In prep.).
+          </p>
+        </details>
+        <!--<div class="card-links">
+          <a href="assets/pdfs/maze-heatmaps-summary.pdf">Read the write-up (PDF)</a>
+        </div>-->
+      </div>
+
+      <div class="card">
+        <div class="card-media">
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/discovery-metric-placeholder.jpg">
+              <source src="assets/videos/approach45.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/approach45.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/discovery-metric-placeholder.jpg">
+              <source src="assets/videos/approach45_occlude.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/approach45_occlude.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/discovery-metric-placeholder.jpg">
+              <source src="assets/videos/courtyard_rhombus_animation.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/courtyard_rhombus_animation.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+        </div>
+
+        <!--<span class="tag">Do humans develop route preferences among options that are equal in length?</span>-->
+        <h3>Do humans develop route preferences among options that are equal in length?</h3>
+        <p class="muted">
+          We have found that preferences in route selection sometimes emerge even in scenarios where preferences may not be warranted, i.e.: when routes are equal in length and shape. However, this is modulated by route visibility - only when routes are occluded (even if they've been learned) do preferences among equal options emerge. 
+        </p>
+        <details class="read-more">
+          <summary>Read more</summary>
+          <p class="muted">
+            Consider: if navigational preferences always correspond with the optimization of global features like total route length, we would expect that no preferences would emerge among options that are equal along those relevant feature dimensions. An alternative hypothesis, however, is that local features - such as those corresponding with perceptual or motor states at decision points - might shape navigational preferences even when relevant global features are equal. Such local features could include whether the instantaneous motion of the body aligns with a candidate waypoint (Γ), relevant to the metabolic costs of turning, or how much the vector to a candidate waypoint deviates from the vector to the goal (Θ), a perceptual heuristic that we have shown correlates with the discovery of shorter routes when agents are given no information about their environments (Engstrom, Srinivasan & Warren, In prep.).
+          </p>
+          <p class="muted">
+            In a VR experiment that involved walking around open rectangular courtyards, i.e.: choosing between routes that were equal in length, we found that humans disregarded perceptual variables (e.g., Θ) that normally correlate with the discovery of shorter routes in unfamiliar, multi-room environments. We interpreted this to mean that the use of such perceptual variables is only employed under uncertainty, otherwise global features like total route length (when accessible) dominate navigational decision-making. In a follow-up experiment, however, we showed that blocking a direct view of the courtyard at turning points, despite allowing navigators to learn and memorize the structure of the courtyards, was enough to reinstate perceptually-based route choice behavior, i.e.: navigators were influenced to minimize Θ, whereas they weren’t in full visibility scenarios. This indicated that it was the ability to see routes, and not necessarily learned knowledge of their structure, that controlled whether decision-making depended on global features like route length (used when all routes are visible) or on local features like the angular deviation between waypoint and goal (used when routes are not visible, even if they're memorized). Consistent with this model, we found by manipulating the geometry of open courtyards to make one route option longer than the other, that even when the local perceptual variable Θ favored the opposite route, navigators strongly preferred the route that was shorter, because both routes were clearly visible (Engstrom & Warren, 2026; see link below). These results suggest that navigational preferences can emerge among equal options when options are visually occluded; otherwise route-selection effectively becomes random and no preferences are discernible.
+          </p>
+        </details>
+        <div class="card-links">
+          <a href="assets/pdfs/VSS2026_CJE_final_small-3.pdf">Link to conference poster (PDF)</a>
+        </div>
+      </div>
+
+      
+
+      <div class="card">
+        <div class="card-media">
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/signal-processing-placeholder.jpg">
+              <source src="assets/videos/Grid_animation_2x4.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/Grid_animation_2x4.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+                    <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/signal-processing-placeholder.jpg">
+              <source src="assets/videos/Grid_animation_1x5.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/Grid_animation_1x5.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+        </div>
+        <!--<span class="tag">Signal processing</span>-->
+        <h3>How do navigators resolve the trade-offs between the physical and control costs of routes?</h3>
+        <p class="muted">
+          Here we tested for the emergence of route preferences through so-called Manhattan mazes, which theoretically have several globally optimal solutions if you evaluate routes based on total length. Instead, we observed two distinct navigational strategies that differentially traded off the physical and control costs of walking along a route.
+        </p>
+        <details class="read-more">
+          <summary>Read more</summary>
+          <p class="muted">
+            By measuring movement patterns through grid-mazes with different dimensions, our sample could be parsed based on the expression of two distinct strategies - roughly half of the sample preferred to navigate around the perimeter (‘wall-following’) while the other half clinged to the diagonal (‘beelining’). Both of these strategies appeared to be guided by a combination of local decision-making rules, specifically the minimization of Γ and Θ, while each group applied different weights to each rule. Interestingly, because of a spontaneous corner-cutting behavior, we found that the beelining strategy resulted in routes that were slightly although statistically shorter and more energetically efficient than the wall-following group. Even so, relative to wall-following, beelining relies on more ‘expensive’ perceptual-motor control processes that require constant surveillance of one's changing field of view and frequent changes in the state and actions of the body. Therefore, we speculate that the split in the sample reflects two solutions to a tradeoff between the physical and perceptual control costs of implementing routes (Engstrom & Warren, 2025; see link below). Just like our courtyard studies, these results also suggest that preferences sometimes emerge among route options that are close to being equal along global dimensions relevant to the navigator (e.g.: total route length), suggesting that route preferences can be based on local motor or perceptual states at waypoints.
+          </p>
+        </details>
+        <div class="card-links">
+          <a href="assets/pdfs/ECVP poster Engstrom V2_final_small.pdf">Link to conference poster (PDF)</a>
+        </div>
+      </div>
+
+      
+
+      <div class="card">
+        <div class="card-media">
+          <div class="video-wrap">
+            <video class="thumb" controls autoplay muted loop playsinline preload="auto" poster="assets/images/glampi-placeholder.jpg">
+              <source src="assets/videos/search_animation.mp4" type="video/mp4">
+            </video>
+            <div class="video-fallback" hidden>
+              <p>This animation couldn't load in your browser.</p>
+              <a href="assets/videos/search_animation.mp4" download>Download the video (.mp4)</a>
+            </div>
+          </div>
+        </div>
+        <!--<span class="tag">Modeling</span>-->
+        <h3>How do people search for hidden targets under maximal uncertainty?</h3>
+        <p class="muted">
+          Searches are often perceptually or memory-guided, but how might humans approach a search problem when there is no information about target likelihood in their environments? Rather than probing what strategies are likely to be successful given perfect motion-tracking capacities, this question probes what strategies are likely to be successful given the internal spatial-cognitive constraints and limitations of the searcher. 
+        </p>
+        <details class="read-more">
+          <summary>Read more</summary>
+          <p class="muted">
+            As part of my ongoing dissertation research, I am analyzing the movement of humans searching in large virtual environments. The field of movement ecology has given rise to motley models of foraging, dispersal and migration in animals, but little is known about the methods humans might employ while searching for hidden targets. Search is related to navigation in that if done effectively, it requires the searcher to maintain some concept of where they are and where they have been. However, the degree to which spatial memory systems (i.e.: tracking ones position) are employed may depend on the constraints of the task,  including the richness of landmark information available, the time limits on the search task, and target numerosity, all of which affect the difference in the effort-to-success tradeoff between memoryful and memoryless searches. I am currently modelling human search strategies in an effort to understand how and when memory is employed, and whether this employment is demonstrably ‘efficient’, considering factors like error accumulation in path integration.
+          </p>
+        </details>
+        <!--<div class="card-links">
+          <a href="assets/pdfs/path-integration-model.pdf">Read the write-up (PDF)</a>
+        </div>-->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> Cassandra Engstrom. Built for GitHub Pages.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

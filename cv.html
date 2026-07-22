@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Cassandra Engstrom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="nav-name" href="index.html">Cassandra Engstrom</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html" aria-current="page">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="intro" style="padding-bottom: 5rem;">
+  <div class="wrap prose">
+    <p class="eyebrow">Curriculum vitae</p>
+    <h1>CV</h1>
+    <div class="button-row" style="margin-top: 1.6rem;">
+      <a class="btn primary" href="assets/pdfs/cv-cassandra-engstrom.pdf">Download CV (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> Cassandra Engstrom. Built for GitHub Pages.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
